@@ -34,7 +34,7 @@ int main(){
 				printf("%d ", garden[row][column]);
 			}
 		}
-		printf("\n");
+		printf("\n"); 
 	}
 	
 	
