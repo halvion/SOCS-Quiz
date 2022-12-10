@@ -16,14 +16,14 @@ void lockedChecker(int x, int patterns[], int y){
             }
         }
         if(point%2!=0){
-            printf("%d ", i);
+            printf(" %d", i);
         }
         else{
             faultCheck++;
         }
     }
     if(faultCheck==x){
-        printf("No room left!");
+        printf(" No room left!");
     }
 }
 
@@ -36,7 +36,7 @@ int main(){
         scanf("%d %d", &door, &pattern);
         
         scanPattern(patternx, pattern);
-        printf("Case #%d: ", i+1);
+        printf("Case #%d:", i+1);
         lockedChecker(door, patternx, pattern);
         printf("\n");
 
