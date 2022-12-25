@@ -26,15 +26,15 @@ void mmrChecker(int totalMMR[], int MMR, int size){
     int count = 0;
     for(int index=0;index<size;index++){
         if(MMR == totalMMR[0]){
-            printf("%d %d\n", totalMMR[0], totalMMR[1]);
+            printf("%d %d\n", MMR, totalMMR[1]);
             break;
         }
         else if(MMR == totalMMR[size-1]){
-            printf("%d %d\n", totalMMR[size-1], totalMMR[size-2]);
+            printf("%d %d\n", totalMMR[size-2], MMR);
             break;
         }
         else if(MMR == totalMMR[index]){
-            printf("%d %d\n", totalMMR[index], totalMMR[index+1]);
+            printf("%d %d\n", MMR, totalMMR[index+1]);
             break;
         }
         else count++;
